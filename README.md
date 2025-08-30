@@ -18,7 +18,7 @@ A Python script that automates the process of deleting WhatsApp messages using P
 1.Clone the repository:
 
     git clone https://github.com/Atharva2006/AutoDeleteWA.git
-    cd AutoDeleteWA
+    
 
 2.Create a virtual environment (optional but recommended):
 
@@ -41,7 +41,7 @@ A Python script that automates the process of deleting WhatsApp messages using P
 Run the script:
 - In the terminal, execute the Python script:
 
-    python auto_delete_wa.py
+      python auto_delete_wa.py
 
 
 Modify conditions:
