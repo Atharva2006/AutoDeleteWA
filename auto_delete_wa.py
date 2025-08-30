@@ -1,7 +1,7 @@
 import asyncio
 from patchright.async_api import async_playwright
 import time
-# import pandas as pd 
+
 
 class wab:
 
@@ -24,15 +24,15 @@ class wab:
         )
             self.page = await self.browser.new_page()
             await self.page.goto(self.url)
-            # R = input("enter\n")
+            scan = input("login in whatsapp web. press enter when done")
             await asyncio.sleep(8)
-            # bomboclat = self.page.locator('span[title="Caffeinated Chaos"]')
-            # bomboclat = self.page.locator('span[title="DYPIU UNOFFICIAL GROUP "]')
-            bomboclat = self.page.locator('span[title="Test"]')
+            
+            grp = input("enter your exact group/chat name (is case sensitive)")
+            bomboclat = self.page.locator(f'span[title= "{grp}"]')
         
 
             await bomboclat.click()
-            # p = input("enter\n")
+            
             await asyncio.sleep(4)
 
             while True:
@@ -43,7 +43,7 @@ class wab:
                     if count > 0:
                         lastmsg = yoo.nth(count - 1)
                         break
-                # lastmsg = yoo.nth(await yoo.count()-1)
+                await asyncio.sleep(20)
 
                 await self.page.evaluate('window.scrollBy(0, -100)')
                 
@@ -67,44 +67,8 @@ class wab:
                 await asyncio.sleep(1)
 
                 await self.page.locator('//button[.//div[text()="Delete for everyone"]]').click()
-                await asyncio.sleep(1)
+                await asyncio.sleep(2)
 
-
-
-                # q = input("waiting\n")
-                await asyncio.sleep(4)
-
-
-
-
-
-
-
-                # await page.locator('img[alt="Sticker with no label"]').hover()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              
-
-
-
-
-            
-
-        
-        
 
 url = "https://web.whatsapp.com/"
 asyncio.run(wab(url).browser_open())
