@@ -25,11 +25,11 @@ A Python script that automates the process of deleting WhatsApp messages using P
     python3 -m venv venv
 - on Linux,use
 
-    source venv/bin/activate
+      source venv/bin/activate
 
 - On Windows, use
          
-    venv\Scripts\activate 
+      venv\Scripts\activate 
 
 3.install patchright and chromium via
 
