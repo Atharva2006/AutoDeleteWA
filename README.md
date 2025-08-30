@@ -2,18 +2,18 @@
 
 A Python script that automates the process of deleting WhatsApp messages using Playwright. This code helps in removing your own messages after some seconds for privacy freaks.
 
-##Features
+## Features
 
 -Automates the deletion of WhatsApp messages.
 -Built using Python and Playwright for browser automation.
 -Simple script-based solution – no extra tools or complex setup required.
 
-##Requirements
+## Requirements
 
 -Python 3.8 or later
 -Patchright for asynchronous Playwright integration
 
-##Installation
+## Installation
 
 1.Clone the repository:
 
@@ -36,7 +36,7 @@ A Python script that automates the process of deleting WhatsApp messages using P
     pip install patchright
     patchright install chrome
 
-##Usage
+## Usage
 
 Run the script:
 -In the terminal, execute the Python script:
@@ -47,7 +47,7 @@ Run the script:
 Modify conditions:
 -You can edit the script to specify when and which messages to delete (e.g., by sender, content, or message time).
 
-##License
+## License
 
 -This code is licensed under the MIT License – see the LICENSE file for details.
 
